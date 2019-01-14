@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12C3759421EC8D8D009B3372 /* Cheetah.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6F96CFA51B8437390014443A /* Cheetah.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		12C3759821EC8DA1009B3372 /* CheetahTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6FD06C1DB8A43A00456086 /* CheetahTV.framework */; };
+		12C3759921EC8DA1009B3372 /* CheetahTV.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB6FD06C1DB8A43A00456086 /* CheetahTV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6F96CF8E1B8437310014443A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F96CF8D1B8437310014443A /* AppDelegate.swift */; };
 		6F96CF901B8437310014443A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F96CF8F1B8437310014443A /* ViewController.swift */; };
 		6F96CF931B8437310014443A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F96CF911B8437310014443A /* Main.storyboard */; };
@@ -19,6 +22,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		12C3759521EC8D8D009B3372 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F96CF9F1B8437390014443A /* Cheetah.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F96CF661B8436F80014443A;
+			remoteInfo = Cheetah;
+		};
+		12C3759A21EC8DA1009B3372 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F96CF9F1B8437390014443A /* Cheetah.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BB6FD05F1DB8A40E00456086;
+			remoteInfo = CheetahTV;
+		};
 		6F96CFA41B8437390014443A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6F96CF9F1B8437390014443A /* Cheetah.xcodeproj */;
@@ -56,6 +73,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		12C3759721EC8D8D009B3372 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				12C3759421EC8D8D009B3372 /* Cheetah.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C3759C21EC8DA1009B3372 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				12C3759921EC8DA1009B3372 /* CheetahTV.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		6F96CF8A1B8437310014443A /* CheetahExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheetahExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F96CF8D1B8437310014443A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,12 +127,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C3759821EC8DA1009B3372 /* CheetahTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12C3758B21EC8B27009B3372 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6F96CF811B8437310014443A = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +148,7 @@
 				BB6FD04A1DB8A18400456086 /* CheetahExampleTV */,
 				6F96CF8B1B8437310014443A /* Products */,
 				6F96CF9F1B8437390014443A /* Cheetah.xcodeproj */,
+				12C3758B21EC8B27009B3372 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,11 +206,13 @@
 				6F96CF861B8437310014443A /* Sources */,
 				6F96CF871B8437310014443A /* Frameworks */,
 				6F96CF881B8437310014443A /* Resources */,
+				12C3759721EC8D8D009B3372 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				6F96CFBB1B8468DD0014443A /* PBXTargetDependency */,
+				12C3759621EC8D8D009B3372 /* PBXTargetDependency */,
 			);
 			name = CheetahExample;
 			productName = CheetahExample;
@@ -173,11 +226,13 @@
 				BB6FD0451DB8A18400456086 /* Sources */,
 				BB6FD0461DB8A18400456086 /* Frameworks */,
 				BB6FD0471DB8A18400456086 /* Resources */,
+				12C3759C21EC8DA1009B3372 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				BB6FD0691DB8A43A00456086 /* PBXTargetDependency */,
+				12C3759B21EC8DA1009B3372 /* PBXTargetDependency */,
 			);
 			name = CheetahExampleTV;
 			productName = CheetahExampleTV;
@@ -191,7 +246,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Suguru Namura";
 				TargetAttributes = {
 					6F96CF891B8437310014443A = {
@@ -200,7 +255,6 @@
 					};
 					BB6FD0481DB8A18400456086 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 4X6KFKQ3S7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -298,6 +352,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		12C3759621EC8D8D009B3372 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cheetah;
+			targetProxy = 12C3759521EC8D8D009B3372 /* PBXContainerItemProxy */;
+		};
+		12C3759B21EC8DA1009B3372 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CheetahTV;
+			targetProxy = 12C3759A21EC8DA1009B3372 /* PBXContainerItemProxy */;
+		};
 		6F96CFBB1B8468DD0014443A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Cheetah;
@@ -341,19 +405,28 @@
 		6F96CF9A1B8437310014443A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -381,6 +454,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -388,19 +462,28 @@
 		6F96CF9B1B8437310014443A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -421,6 +504,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -429,43 +513,48 @@
 		6F96CF9D1B8437310014443A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CheetahExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.suguru.CheetahExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		6F96CF9E1B8437310014443A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CheetahExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.suguru.CheetahExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
 		BB6FD0551DB8A18400456086 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEVELOPMENT_TEAM = 4X6KFKQ3S7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CheetahExampleTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.suguru.CheetahExampleTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
@@ -474,18 +563,19 @@
 		BB6FD0561DB8A18400456086 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEVELOPMENT_TEAM = 4X6KFKQ3S7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CheetahExampleTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.suguru.CheetahExampleTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
@@ -519,6 +609,7 @@
 				BB6FD0561DB8A18400456086 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

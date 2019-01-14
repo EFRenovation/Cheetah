@@ -102,7 +102,7 @@ class ViewController: UIViewController {
         */
         
         box.cheetah
-            .rotate(M_PI_2)
+            .rotate(Double.pi / 2)
             .run()
         
         box2.cheetah
